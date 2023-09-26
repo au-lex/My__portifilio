@@ -85,11 +85,11 @@ const Contact = () => {
     <Header />
 
     <section className=''>
-      <h1 className='text-center text-[2rem] capitalize my-8'>contact us </h1>
+      <h1 className='text-center text-[2rem] capitalize my-8 '>contact us </h1>
 
     
 
-      <form className="inputBox  flex justify-center  space-x-14" onSubmit={sendEmail}>
+      <form className="inputBox  flex justify-center  flex-wrap lg:space-x-14 " onSubmit={sendEmail}>
         
         {/* <form className="contact-form" onSubmit={sendEmail}> */}
           
@@ -99,9 +99,10 @@ const Contact = () => {
        name="from_name" 
        value={userName} 
        onChange={(e) => setUserName(e.target.value)} 
-      class="placeholder:italic placeholder:text-slate-400 block bg-white  border w-[30rem] 
+      class="placeholder:italic placeholder:text-slate-400 block bg-white  border lg:w-[30rem] 
       
-       border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500
+       border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm w-full focus:outline-none
+        focus:border-sky-500
        focus:ring-sky-500 focus:ring-1 sm:text-sm"
        placeholder="Enter your name..." type="text" />
 
@@ -110,7 +111,8 @@ const Contact = () => {
        value={userEmail} 
        onChange={(e) => setUserEmail(e.target.value)} 
        required 
-      class="placeholder:italic placeholder:text-slate-400 block bg-white  border w-[30rem] my-10
+      class="placeholder:italic placeholder:text-slate-400 block bg-white  border w-full
+       lg:w-[30rem] my-10
        border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500
        focus:ring-sky-500 focus:ring-1 sm:text-sm"
        placeholder="Enter your email..." type="email" />
@@ -141,7 +143,7 @@ const Contact = () => {
           </div>
        </div>
 
-       <div className=''>
+       <div className='mt-[4rem]'>
          {/* <label >enter your message</label> */}
     <textarea 
       name="message" 
@@ -151,7 +153,8 @@ const Contact = () => {
     id="textA" cols="30" rows="10"  placeholder="Enter your message..." 
      class="placeholder:italic placeholder:text-slate-400 block bg-white 
      border  
-       border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 w-[30rem]
+       border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm  focus:outline-none
+        focus:border-sky-500 lg:w-[30rem] 
        focus:ring-sky-500 focus:ring-1 "> </textarea>
 <section className='text-right my-6'>
 
@@ -171,8 +174,8 @@ focus:outline-none focus:ring focus:ring-violet-300 ..." >
        </form>
 
        <footer>
-        <section className=' bg-slate-500 w-full h-[12.7rem]'>
-          <nav className='flex justify-center   space-x-64 " py-7 text-slate-300'>
+        <section className=' bg-slate-500 lg:w-full h-[15.7rem]'>
+          <nav className='flex justify-center   space-x-6  lg:space-x-64 " py-7 text-slate-300'>
             <ul  className='leading-[26px]'>
               <h3  className='text-[1.4rem] text-slate-100'>Quick links</h3>
               
@@ -181,14 +184,14 @@ focus:outline-none focus:ring focus:ring-violet-300 ..." >
               <li><Link to="/Project"><span className='mr-2'><i class="ri-arrow-right-line"></i></span>project</Link></li>
               <li><Link to="/Contact"><span className='mr-2'><i class="ri-arrow-right-line"></i></span>contact</Link></li>
             </ul>
-            <ul  className='leading-[26px]'>
+            {/* <ul  className='leading-[26px]'>
               <h3  className='text-[1.4rem] text-slate-100'>Services</h3>
              
               <li> <span className='mr-2'><i class="ri-arrow-right-line"></i></span>web design</li>
               <li><span className='mr-2'><i class="ri-arrow-right-line"></i></span>web development</li>
               <li> <span className='mr-2'><i class="ri-arrow-right-line"></i></span>digital painting</li>
               <li><span className='mr-2' ><i class="ri-arrow-right-line"></i></span>graphics design</li>
-            </ul>
+            </ul> */}
             <ul  className='leading-[30px]'>
               <h3 className='text-[1.4rem] text-slate-100'>Have a queastion ?</h3>
               

@@ -30,6 +30,37 @@ li {
  
 }
 
+/* CSS for Header Component */
+/* Desktop Navigation */
+.lg:flex {
+  display: flex;
+}
+
+.space-x-60 {
+  margin-right: 60px;
+}
+
+/* Mobile Navigation */
+.menuOpen {
+  cursor: pointer;
+}
+
+.active {
+  color: red; /* Change to your desired active color */
+}
+
+/* Mobile Menu */
+.navContainer {
+  display: none;
+ 
+}
+
+/* Adjust the mobile menu styles when it's active */
+.menuOpen.active + .navContainer {
+  display: block;
+}
+
+
 .btn {
     text-decoration: none;
     position: relative;
@@ -155,6 +186,7 @@ li {
 .progress-container, .profile {
   box-shadow: rgba(100, 100, 111, 0.01) 0px 7px 29px 0px;
   margin-bottom: 20px;
+
   @apply flex
   
 }

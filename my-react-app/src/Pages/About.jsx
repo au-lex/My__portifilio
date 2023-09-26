@@ -62,9 +62,9 @@ const About = () => {
 
       <Header />
 
-      <section className="aboutContainer lg:flex lg:justify-center px-[15rem] w-full space-x-24 mt-10">
-        <section className=" w-[50%]">
-          <h3 className="capitalize text-[2rem] my-4">about me</h3>
+      <section className="aboutContainer lg:flex lg:justify-center lg:px-[15rem] px-4 w-full space-x-24 mt-10">
+        <section className=" lg:w-[50%]">
+          <h3 className="capitalize lg:text-[2rem] my-4">about me</h3>
           <p className="  text-[15px] leading-[25px]">
             Hello! My name is Boniface Paul and I'm a passionate Frontend
             Developer with over [2 years] of experience in crafting
@@ -129,7 +129,7 @@ const About = () => {
             </section>
           </div>
         </section>
-        <section className="progressSkills w-[50%] h-[30rem] text-[15px] px-4  ">
+        <section className="progressSkills lg:w-[50%] h-[30rem] text-[15px] px-4 lg:block  hidden">
           <h3 className="capitalize text-[2rem] my-4">skills</h3>
 
           <section className="skillCategory">
@@ -198,6 +198,9 @@ const About = () => {
             </div>
           </section>
         </section>
+
+
+        
       </section>
     </>
   );
